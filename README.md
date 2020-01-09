@@ -8,7 +8,7 @@ Do you want to extend the code for live video cameras and send webhooks/emails u
 If your answer is at least one yes, then we hope that you can benefit from this code.
 
 We will update instructions soon but if you can read the first few lines of the code, you will be able to use the code with no problem.  
-If you want to accelerate the detection without the live view, please uncomment the showing code like this:  
+If you want to accelerate the detection without the live view, please comment the showing code like this:  
 ```python
     # cv2.imshow("feed", frame1)
     # if cv2.waitKey(1) & 0xFF == ord('q'):
