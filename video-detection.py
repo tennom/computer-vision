@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import cv2, pandas
+import cv2
+from pandas import DataFrame
 from datetime import timedelta
 
 # cv2 can detect it but it's easier this way.
@@ -50,7 +51,7 @@ def log_movement(df, log_time):
         new_log = True
     return df
 
-df = pandas.DataFrame(columns=["Start", "End"])
+df = DataFrame(columns=["Start", "End"])
 df = df.append({'Start':"placeholder", 'End':"-1 day, 23:59:59"},ignore_index=True)
 
 cap = cv2.VideoCapture(VIDEO_FILE_PATH)
